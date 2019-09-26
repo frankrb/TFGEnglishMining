@@ -1,0 +1,9 @@
+#TFGEnglishMining
+
+Se ha creado un script en python para probar la clasificación con Tensorflow.
+Se han ajustado los datos para que pudieran ser leídos:
+    Se ha creado la carpeta Temporales donde se han guarado los datos que pueden ser utilizados para entrenar y probar el modelo.
+
+Este código es de prueba.
+
+Actualmente el accuracy es del 33,3%.
