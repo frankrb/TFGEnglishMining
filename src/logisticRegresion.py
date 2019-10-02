@@ -28,8 +28,8 @@ def logisticRegresion():
     print("################################################")
 
     data = pd.read_csv('../data/Temporales/train_clean_modificado.csv',header=None, skiprows=1)
-
     data = data.reindex(np.random.permutation(data.index))
+
     # data.describe()
 
     print("Data Shape:", data.shape)

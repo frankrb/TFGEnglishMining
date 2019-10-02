@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139c71c3-fec4-442a-95c6-18919f7da108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basicClassificationTF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kerasClassification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logisticRegresion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/NewData/iris_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/NewData/iris_training.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/englishCSVtf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/irisCSVtf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kerasClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kerasClassification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logisticRegresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/logisticRegresion.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,58 +23,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
+        <entry file="file://$PROJECT_DIR$/src/irisCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+            <state relative-caret-position="340">
+              <caret line="146" column="30" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="30" />
               <folding>
-                <element signature="e#0#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logisticRegresion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/basicClassificationTF.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="74" column="33" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#40#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kerasClassification.py">
+        <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            <state relative-caret-position="425">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding>
-                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#39#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/wrappers/scikit_learn.py">
+        <entry file="file://$PROJECT_DIR$/src/kerasClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="178" column="8" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
+            <state relative-caret-position="437">
+              <caret line="104" column="55" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +76,7 @@
       <find>np</find>
       <find>707</find>
       <find>fit</find>
+      <find>reshape</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\frank\PycharmProjects\TFGEnglishMining</dir>
@@ -124,15 +95,18 @@
         <option value="$PROJECT_DIR$/data/readme" />
         <option value="$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/logisticRegresion.py" />
         <option value="$PROJECT_DIR$/src/basicClassificationTF.py" />
+        <option value="$PROJECT_DIR$/src/logisticRegresion.py" />
         <option value="$PROJECT_DIR$/src/kerasClassification.py" />
+        <option value="$PROJECT_DIR$/englishCSVtf.py" />
+        <option value="$PROJECT_DIR$/src/irisCSVtf.py" />
+        <option value="$PROJECT_DIR$/src/englishCSVtf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="864" />
-    <option name="y" value="-15" />
+    <option name="x" value="226" />
+    <option name="y" value="-17" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -143,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,7 +133,7 @@
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Modelos" type="462c0819:PsiDirectoryNode" />
+              <item name="NewData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
@@ -189,18 +162,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/Temporales" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/NewData" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\NewData" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Temporales" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest" />
@@ -219,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kerasClassification">
+  <component name="RunManager" selected="Python.englishCSVtf (1)">
     <configuration name="basicClassificationTF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TFGEnglishMining" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,6 +212,72 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/basicClassificationTF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="englishCSVtf (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFGEnglishMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/englishCSVtf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="englishCSVtf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFGEnglishMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\englishCSVtf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="irisCSVtf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TFGEnglishMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/irisCSVtf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,56 +308,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="logisticRegresion" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TFGEnglishMining" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/logisticRegresion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TFGEnglishMining" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.englishCSVtf (1)" />
+        <item itemvalue="Python.irisCSVtf" />
         <item itemvalue="Python.kerasClassification" />
+        <item itemvalue="Python.englishCSVtf" />
         <item itemvalue="Python.basicClassificationTF" />
-        <item itemvalue="Python.logisticRegresion" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -341,6 +342,13 @@
       <workItem from="1568985670403" duration="266000" />
       <workItem from="1569056366771" duration="4714000" />
       <workItem from="1569145118042" duration="19466000" />
+      <workItem from="1569477282444" duration="811000" />
+      <workItem from="1569518568934" duration="1362000" />
+      <workItem from="1569668915179" duration="3522000" />
+      <workItem from="1569691646308" duration="1877000" />
+      <workItem from="1569693547627" duration="333000" />
+      <workItem from="1569748719878" duration="17984000" />
+      <workItem from="1569787131551" duration="5210000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -370,11 +378,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563378922447</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit hoy">
+      <created>1569477442092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569477442092</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit hoy">
+      <created>1569477510017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569477510017</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101600000" />
+    <option name="totallyTimeSpent" value="132699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,12 +410,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.10554371" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
       <window_info id="Favorites" order="2" sideWeight="0.5005192" side_tool="true" weight="0.18176973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26272067" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34371755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,7 +424,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -479,53 +501,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit inicio" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit inicio" />
+    <MESSAGE value="commit hoy" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit hoy" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TFGEnglishMining$kerasClassification.coverage" NAME="kerasClassification Coverage Results" MODIFIED="1569168322828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$kerasClassification.coverage" NAME="kerasClassification Coverage Results" MODIFIED="1569767652313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$main.coverage" NAME="main Coverage Results" MODIFIED="1569063875284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/TFGEnglishMining$basicClassificationTF.coverage" NAME="basicClassificationTF Coverage Results" MODIFIED="1569163630126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/TFGEnglishMining$logisticRegresion.coverage" NAME="logisticRegresion Coverage Results" MODIFIED="1569161858722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf__1_.coverage" NAME="englishCSVtf (1) Coverage Results" MODIFIED="1569792520099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$basicClassificationTF.coverage" NAME="basicClassificationTF Coverage Results" MODIFIED="1569753263330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$logisticRegresion.coverage" NAME="logisticRegresion Coverage Results" MODIFIED="1569750672323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$irisCSVtf.coverage" NAME="irisCSVtf Coverage Results" MODIFIED="1569788267742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf.coverage" NAME="englishCSVtf Coverage Results" MODIFIED="1569766999039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/keras/engine/training_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/math_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="688" selection-start-line="688" selection-end-line="688" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/data/ops/dataset_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1811" column="6" selection-start-line="1811" selection-start-column="6" selection-end-line="1811" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/gen_math_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="2340" column="27" selection-start-line="2340" selection-start-column="18" selection-end-line="2340" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/data/experimental/ops/readers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="240" column="36" selection-start-line="240" selection-start-column="36" selection-end-line="242" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/keras/engine/training_generator.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/math_ops.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/data/ops/dataset_ops.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/gen_math_ops.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/data/experimental/ops/readers.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-535">
@@ -534,13 +530,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Temporales/train_fully_clean.csv" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151623">
-          <caret line="8940" column="4" selection-start-line="8940" selection-start-column="4" selection-end-line="8940" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py" />
     <entry file="file://$PROJECT_DIR$/src/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -551,27 +541,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/feature_column/feature_column_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="433" column="31" selection-start-line="433" selection-start-column="31" selection-end-line="433" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/nn_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/framework/tensor_shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="938" selection-start-line="938" selection-end-line="938" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/feature_column/feature_column_v2.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/nn_impl.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/framework/tensor_shape.py" />
     <entry file="file://$PROJECT_DIR$/data/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -579,57 +551,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="37" column="979" selection-start-line="37" selection-start-column="979" selection-end-line="37" selection-end-column="979" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="189" column="75" selection-start-line="189" selection-start-column="72" selection-end-line="189" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/keras/engine/training.py" />
     <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="929" selection-start-line="1" selection-start-column="921" selection-end-line="1" selection-end-column="929" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="527" selection-start-line="527" selection-end-line="527" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="2788">
-          <caret line="164" column="928" selection-start-line="164" selection-start-column="918" selection-end-line="164" selection-end-column="928" />
         </state>
       </provider>
     </entry>
@@ -640,27 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean.csv">
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="2908" selection-start-column="2865" selection-end-column="2908" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/window.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -668,52 +574,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Temporales/test_clean.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-760" />
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="541">
-          <caret line="111" column="1" lean-forward="true" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/wrappers/scikit_learn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="178" column="8" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logisticRegresion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basicClassificationTF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="33" />
+        <state relative-caret-position="397">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="52" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/wrappers/scikit_learn.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/652898942/numpy/core/_multiarray_umath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="178" column="8" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
+        <state relative-caret-position="202">
+          <caret line="9817" column="8" selection-start-line="9817" selection-start-column="8" selection-end-line="9817" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="857">
+          <caret line="245" column="7" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
+          <folding>
+            <element signature="e#251#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_encoders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1736">
+          <caret line="257" column="4" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/sequential.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Temporales/test_clean.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="149" column="27" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/NewData/iris_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/NewData/iris_training.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCSVtf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="146" column="30" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kerasClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        <state relative-caret-position="437">
+          <caret line="104" column="55" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="55" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="620" selection-start-line="620" selection-end-line="620" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#39#77#0" expanded="true" />
           </folding>
         </state>
       </provider>

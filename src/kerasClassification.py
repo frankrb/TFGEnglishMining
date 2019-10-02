@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import pandas as pd
 import numpy as np
+import csv
 from sklearn.preprocessing import LabelEncoder
 from sklearn import utils
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -12,6 +13,7 @@ from sklearn.neural_network import MLPClassifier
 import random
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
+from sklearn.preprocessing import OneHotEncoder
 from keras import optimizers
 import pickle
 from time import time
@@ -24,10 +26,11 @@ from keras import utils
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.wrappers.scikit_learn import KerasClassifier
+
 import tensorflow_datasets as tfds
 import csv
 
-EPOCS = 150
+EPOCS = 100
 LEARNING_RATE = 0.0035
 
 def kerasClassification():
@@ -37,9 +40,8 @@ def kerasClassification():
     dataframe = pd.read_csv('../data/Temporales/train_clean.csv', header=None, skiprows=1)
     dataframe = dataframe.reindex(np.random.permutation(dataframe.index))
     dataset = dataframe.values
-    # print(dataset)
     X = dataset[:, 0:148].astype(float)
-    Y = dataset[:, 148]
+    Y = dataframe.iloc[:, -1:].values
 
     print("X: ", X)
     print("Y: ", Y)
@@ -49,22 +51,28 @@ def kerasClassification():
         Iris-setosa,	Iris-versicolor,	Iris-virginica
         1,		0,			0
         0,		1, 			0
-        0, 		0, 			1"""
+        0, 		0, 			1
     encoder = LabelEncoder()
     encoder.fit(Y)
     encoded_Y = encoder.transform(Y)
+    """
+
+    # One Hot encode the class labels
+    encoder = OneHotEncoder(sparse=False)
+    encoded_Y = encoder.fit_transform(Y)
 
     # convert integers to dummy variables (i.e. one hot encoded)
     dummy_y = utils.to_categorical(encoded_Y)
 
-    estimator = KerasClassifier(build_fn=baseline_model, batch_size=5 ,verbose=0)
+    estimator = KerasClassifier(build_fn=baseline_model, batch_size=5, verbose=0)
     estimator.fit(X, Y, epochs=EPOCS)
 
     # load test dataset
     dataframe_test = pd.read_csv('../data/Temporales/test_clean.csv', header=None, skiprows=1)
     dataset_test = dataframe_test.values
     X_Test = dataset_test[:, 0:148].astype(float)
-    Y_Test = dataset_test[:, 148]
+    Y_Test = dataframe_test.iloc[:, -1:].values
+
     predictions = estimator.predict(X_Test)
     i = 0
     total = 0
@@ -90,7 +98,8 @@ def baseline_model():
     # capa oculta de 8 nodos
     # capa de salida de 3 nodos (3 clases)
     model = Sequential()
-    model.add(Dense(64, input_dim=148, activation='relu'))
+    model.add(Dense(128, input_dim=148, activation='relu'))
+    model.add(Dense(128, input_dim=148, activation='relu'))
     model.add(Dense(3, activation='softmax'))
     # Compile model
     model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
