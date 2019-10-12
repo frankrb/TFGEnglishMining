@@ -13,7 +13,7 @@ import random
 from sklearn.model_selection import KFold
 import pickle
 from time import time
-
+from sklearn.model_selection import train_test_split
 import functools
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
@@ -27,7 +27,7 @@ def logisticRegresion():
     print("Executing logistic regression with TensorFlow - Supervised Machine Learning")
     print("################################################")
 
-    data = pd.read_csv('../data/Temporales/train_clean_modificado.csv',header=None, skiprows=1)
+    data = pd.read_csv('../data/Temporales/train_clean.csv',header=None, skiprows=1)
     data = data.reindex(np.random.permutation(data.index))
 
     # data.describe()
@@ -36,55 +36,61 @@ def logisticRegresion():
 
     print(data.head());
 
+    # normalizamos los datos
+
+
     # Feature Matrix
     x_orig = data.iloc[:, :-1].values
+    x = preprocessing.normalize(x_orig)
 
     # Data labels
     y_orig = data.iloc[:, -1:].values
+    y = y_orig
 
-    """ Feature Matrix:(Feature en tensorflow es una característica de la instancia
-                        esta característica puede ser una, o se pueden crear arrays
-                        de varias características por instancia)
-        Shape Label Vector: (Label en tensorflow es la clase de la intancia en concreto)
-    """
-    # print("Shape of Feature Matrix:", x_orig.shape, "\nValues:", x_orig)
-    # print("Shape Label Vector:", y_orig.shape, "\nValues:", y_orig)
+    ##############
+    data_test = pd.read_csv('../data/Temporales/test_clean.csv', header=None, skiprows=1)
+    data_test = data_test.reindex(np.random.permutation(data_test.index))
 
-    # Creating the One Hot Encoder
-    oneHot = OneHotEncoder()
-    oneHot.categories ='auto'
-    # Encoding x_orig
-    oneHot.fit(x_orig)
-    x = oneHot.transform(x_orig).toarray()
+    # data.describe()
 
-    # Encoding y_orig
-    oneHot.fit(y_orig)
-    y = oneHot.transform(y_orig).toarray()
+    print("Data Shape:", data_test.shape)
+
+    print(data_test.head());
+
+    # normalizamos los datos
+
+    # Feature Matrix
+    X_test = data_test.iloc[:, :-1].values
+    X_test = preprocessing.normalize(X_test)
+
+    # Data labels
+    Y_test = data_test.iloc[:, -1:].values
+    #############
 
     print("Train features values: ", x)
     print("Train labels values: ", y)
 
-    alpha, epochs = 0.0035, 2
+    alpha, epochs = 0.0015, 10
     m, n = x.shape
     print('m =', m)
     print('n =', n)
     print('Learning Rate =', alpha)
     print('Number of Epochs =', epochs)
-    exit(1)
+    # exit(1)
     # There are n columns in the feature matrix
     # after One Hot Encoding.
     X = tf.placeholder(tf.float32, [None, n])
 
     # Since this is a binary classification problem,
-    # Y can take only 2 values.
+    # Y can take only 3 values(0-1-2).
     # Hay que ponerle exactamente el número de valores posibles que toma la clase en la muestra, en este caso 3
-    Y = tf.placeholder(tf.float32, [None, 3])
+    Y = tf.placeholder(tf.float32, [None, 1])
 
     # Trainable Variable Weights
-    W = tf.Variable(tf.zeros([n, 3]))
+    W = tf.Variable(tf.zeros([n, 1]))
 
     # Trainable Variable Bias
-    b = tf.Variable(tf.zeros([3]))
+    b = tf.Variable(tf.zeros([1]))
 
     # Hypothesis
     Y_hat = tf.nn.sigmoid(tf.add(tf.matmul(X, W), b))
@@ -99,8 +105,6 @@ def logisticRegresion():
 
     # Global Variables Initializer
     init = tf.global_variables_initializer()
-
-    print('Variables init: ', init)
 
     # Starting the Tensorflow Session
     with tf.Session() as sess:
@@ -142,14 +146,20 @@ def logisticRegresion():
 
         # Save the model (.ckpt)
         saver = tf.train.Saver()
-        saver.save(sess,'../data/Modelos/model.ckpt')
+        saver.save(sess, '../data/Modelos/model.ckpt')
 
         # Final Accuracy
         correct_prediction = tf.equal(tf.argmax(Y_hat, 1),
                                       tf.argmax(Y, 1))
         accuracy = tf.reduce_mean(tf.cast(correct_prediction,
                                           tf.float32))
+
+        train_accuracy = accuracy.eval({X: x, Y: y})
+        test_accuracy = accuracy.eval({X: X_test, Y: Y_test})
         print("\nAccuracy:", accuracy_history[-1], "%")
+        print("Train Accuracy:", train_accuracy)
+        print("Test Accuracy:", test_accuracy)
+
 
     # Let’s plot the change of cost over the epochs.
 
@@ -168,7 +178,7 @@ def logisticRegresion():
     plt.show()
 
     # Ahora utilizaremos el modelo para predecir
-    # testModel()
+    #testModel()
 
 def testModel():
     saver = tf.train.Saver()

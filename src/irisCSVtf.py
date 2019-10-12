@@ -5,17 +5,18 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import csv
-import os
-import urllib
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.optimizers import Adam
 import pandas as pd
 
-from sklearn.model_selection import KFold
-from sklearn.model_selection import cross_val_score
 from sklearn import preprocessing
 
-import numpy as np
-import tensorflow as tf
 
 # Data sets
 IRIS_TRAINING = "../data/NewData/iris_training.csv"
@@ -81,30 +82,6 @@ def main():
         A simple neural network written in Keras (TensorFlow backend) to classify the IRIS data
     """
 
-    import numpy as np
-
-    from sklearn.datasets import load_iris
-    from sklearn.model_selection import train_test_split
-    from sklearn.preprocessing import OneHotEncoder
-
-    from keras.models import Sequential
-    from keras.layers import Dense
-    from keras.optimizers import Adam
-
-    """
-    iris_data = load_iris()  # load the iris dataset
-
-    # iris_data = pd.read_csv('../data/NewData/iris_training.csv', header=None, skiprows=1)
-
-    print('Example data: ')
-    print(iris_data.data[:10])
-    print('Example labels: ')
-    print(iris_data.target[:10])
-
-    x = iris_data.data
-    y_ = iris_data.target.reshape(-1, 1)  # Convert data to a single column
-    """
-
     #####################
     # load train dataset
     dataframe = pd.read_csv('../data/NewData/iris_training.csv', header=None, skiprows=1)
@@ -114,6 +91,8 @@ def main():
     # normalize the data attributes
     train_x = preprocessing.normalize(train_x)
     train_y = dataframe.iloc[:, -1:].values
+    print(train_x)
+    print(train_y)
     #####################
 
     #####################
@@ -128,8 +107,8 @@ def main():
 
     # One Hot encode the class labels
     encoder = OneHotEncoder(sparse=False)
-    train_y = encoder.fit_transform(train_y)
-    test_y = encoder.fit_transform(test_y)
+    #train_y = encoder.fit_transform(train_y)
+    #test_y = encoder.fit_transform(test_y)
 
     # Split the data for training and testing
     # train_x, test_x, train_y, test_y = train_test_split(x, y, test_size=0.20)
@@ -145,7 +124,7 @@ def main():
 
     # Adam optimizer with learning rate of 0.001
     optimizer = Adam(lr=0.0035)
-    model.compile(optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
     print('Neural Network Model Summary: ')
     print(model.summary())
