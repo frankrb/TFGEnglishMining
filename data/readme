@@ -1,9 +1,79 @@
-#TFGEnglishMining
+#Readme
 
-Se ha creado un script en python para probar la clasificación con Tensorflow.
-Se han ajustado los datos para que pudieran ser leídos:
-    Se ha creado la carpeta Temporales donde se han guarado los datos que pueden ser utilizados para entrenar y probar el modelo.
+Manual de usuario para el uso de la aplicación englishCSVtf.py por consola
+1º: Crear una carpeta "Resultado" donde guardar los resultados del entrenamiento y la predicción.
+2º: Entrenamiento y predicción
+    2.1: Si es la primera ejecución utilizar las instrucciones de entrenamiento para tener al menos un modelo con el que predecir.
+        2.1.1: Estructura general de entrenamiento del modelo:
+               - python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa [Aplicar Selección atributos: True o False] -tsa [Tipo Selección Atributos] -na [Número atributos]
 
-Este código es de prueba.
+    2.2: Si ya se ha entrenado previamente el modelo utilizar las instrucciones para realizar predicciones con los modelos obtenidos.
+               - python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep predict -mp [path modelo]
 
-Actualmente el accuracy es del 33,3%.
+- Entrenar el modelo usando HoldOut sin selección de atributos:
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa False
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa False
+
+- Entrenar el modelo usando KFold sin selección de atributos:
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa False
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa False
+
+- Entrenar el modelo usando HoldOut con selección de 50 atributos con Chi2
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa chi2 -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa True tsa chi2 -na 50
+
+- Entrenar el modelo usando HoldOut con selección de 50 atributos con F CLassif
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa f_classif -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa True -tsa f_classif -na 50
+
+- Entrenar el modelo usando HoldOut con selección de 50 atributos con Mutual Info Classif
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa mutual_info_classif -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa True -tsa mutual_info_classif -na 50
+
+- Entrenar el modelo usando KFold con selección de 50 atributos con Chi2
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv KFold -sa True -tsa chi2 -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa chi2 -na 50
+
+- Entrenar el modelo usando KFold con selección de 50 atributos con F CLassif
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv KFold -sa True -tsa f_classif -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa f_classif -na 50
+
+- Entrenar el modelo usando KFold con selección de 50 atributos con Mutual Info Classif
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv KFold -sa True -tsa mutual_info_classif -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa mutual_info_classif -na 50
+
+- Realizar predicción con el modelo cargado y el train resultante del entrenamiento del modelo
+Estructura: python englishCSVtf.py -trdp [path train resultado] -tedp [path test] -of [path carpeta resultado] -ep predict -mp [modelo resultado .h5]
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\mi_train_HoldOut_.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep predict -mp C:\Users\frank\Resultado\mi_modelo_HoldOut_.h5
+
+
+Uso de comandos por consola:
+                       englishCSVtf.py [-h] -trdp TRAIN_DATA_PATH -tedp TEST_DATA_PATH -of
+                       OUTPUT_FOLDER -ep ENTRENAR_PREDECIR
+                       [-mv METODO_VALIDACION] [-sa SELECCION_ATRIBUTOS]
+                       [-tsa TIPO_SELECCION_ATRIBUTOS] [-na NUM_ATRIBUTOS]
+                       [-mp SOURCE_MODEL_PATH]
+
+optional arguments:
+  -h, --help            Muestra el mensaje de ayuda.
+  -trdp TRAIN_DATA_PATH, --train_data_path TRAIN_DATA_PATH
+                        ruta del archivo csv de entrenamiento.
+  -tedp TEST_DATA_PATH, --test_data_path TEST_DATA_PATH
+                        ruta del archivo csv de testeo.
+  -of OUTPUT_FOLDER, --output_folder OUTPUT_FOLDER
+                        ruta del directorio en el que guardar los resultados.
+  -ep ENTRENAR_PREDECIR, --entrenar_predecir ENTRENAR_PREDECIR
+                        atributo que nos dice si hay que entrenar el
+                        modelo(train) o realizar una predicción(predict).
+  -mv METODO_VALIDACION, --metodo_validacion METODO_VALIDACION
+                        atributo para seleccionar el método de validación:
+                        HoldOut o KFold.
+  -sa SELECCION_ATRIBUTOS, --seleccion_atributos SELECCION_ATRIBUTOS
+                        realizar selección de atributos: True o False.
+  -tsa TIPO_SELECCION_ATRIBUTOS, --tipo_seleccion_atributos TIPO_SELECCION_ATRIBUTOS
+                        atributo para especificar la selección de atributos:
+                        chi2, f_classif o mutual_info_classif.
+  -na NUM_ATRIBUTOS, --num_atributos NUM_ATRIBUTOS
+                        número de atributos para la selección.
+  -mp SOURCE_MODEL_PATH, --source_model_path SOURCE_MODEL_PATH
+                        path del modelo entrenado.
