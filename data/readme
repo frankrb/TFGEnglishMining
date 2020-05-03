@@ -20,7 +20,7 @@ Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishM
 
 - Entrenar el modelo usando HoldOut con selección de 50 atributos con Chi2
 Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa chi2 -na 50
-Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa True tsa chi2 -na 50
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa True -tsa chi2 -na 50
 
 - Entrenar el modelo usando HoldOut con selección de 50 atributos con F CLassif
 Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa f_classif -na 50

@@ -273,10 +273,15 @@ def main():
     file.write('\n' + 'Tipo de ejecución: ' + TRAIN_PREDICT)
     if TRAIN_PREDICT == 'train':
         file.write('\n' + 'Tipo de validación: ' + VALIDATION_METHOD)
+        best_neurons_per_layer = 'Número de neuronas: ' + str(best_neurons_per_layer)
+        file.write('\n' + best_neurons_per_layer)
+        best_learning_rate = 'Learning rate: %.5f' % best_learning_rate
+        file.write('\n' + best_learning_rate)
         file.write('\n' + 'Selección de atributos: ' + ATRIBUTE_SELECTION)
         if atributeSelection == 'True':
             file.write('\n' + ' Tipo de salección de atributos: ' + ATRIBUTE_SELECTION_TYPE)
-            file.write('\n' + 'Nº de atributos seleccionados: ' + ATRIBUTE_SELECTION_NO_ATR)
+            numAtributos = str(ATRIBUTE_SELECTION_NO_ATR)
+            file.write('\n' + 'Nº de atributos seleccionados: ' + numAtributos)
         file.write(
             '\n' + 'Path del train usado para el entrenamiento: ' + PATH_RESULTADOS + '\mi_train_' + validatioMethod + '_' + atributeSelectionType + '.csv')
         file.write(
