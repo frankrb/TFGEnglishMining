@@ -59,7 +59,7 @@ TRAIN = "../data/Train/train.csv"
 DEV = "../data/Dev/dev.csv"
 TEST = "../data/Test/test.csv"
 BATCH_SIZE = 32 # en el caso de modelos secuenciales es mejor no incluir el batch size
-CLASS_VALUE = ['Advanced', 'Intermediate', 'Elementary'] # advanced = 0, intermediate = 1, elementary = 2
+CLASS_VALUE = ['Elementary', 'Intermediate', 'Advanced'] # advanced = 2, intermediate = 1, elementary = 0
 EPOCHS = 100 # número de entrenamiento del modelo
 NEURONS_PER_LAYER = [4, 16, 32, 64] # número de nodos por capa(4-16-64-512)
 VERBOSITY = 0 # es un parámetro que nos sirve para la forma en que se muestran las epochs
@@ -67,6 +67,7 @@ LOSS = 'sparse_categorical_crossentropy' # esto es debido a que las clases está
 ACTIVATION = 'softmax' #''softmax' # debido a que es una clasificación multiclass (sigmoid en caso de binarias)
 DEV_SIZE = 0.01 # porcentaje del dev
 LEARN_RATES = [0.01, 0.001, 0.00125, 0.0015, 0.002, 0.0025, 0.003, 0.0035]
+K=10
 '''TRAIN_PREDICT = 'predict' # seleccionamos si deseamos entrenar el modelo o simplemente hacer predicciones con uno existente: train o predict
 ATRIBUTE_SELECTION_TYPE = '' #seleccionamos los X mejores atributos según chi2, f_classif, mutual_info_classif
 ATRIBUTE_SELECTION_NO_ATR = 50
@@ -78,6 +79,7 @@ PATH_TEST_SOURCE = '../data/Test_Aztertest/test_aztertest.csv'
 PATH_TRAIN_SOURCE_TRAINED_MODEL = '../data/Modelos/Train/mi_trainHoldOut_.csv'
 PATH_RESULTADOS = ''
 '''
+
 
 def _get_args():
     """Devuelve los argumentos introducidos por la terminal."""
@@ -149,9 +151,15 @@ def main():
 
     if TRAIN_PREDICT == 'train':
         # cargamos los datos
+        '''
         # cambiamos las clases de Train y Test a números enteros
         preprocess.change_class_to_int(PATH_TEST_SOURCE, "../data/DataExamples/test_class_integer.csv")
         preprocess.change_class_to_int(PATH_TRAIN_SOURCE, "../data/DataExamples/train_class_integer.csv")
+        '''
+        # si ya son integer cargamos los datos directamente
+        preprocess.change_class_to_int(PATH_TEST_SOURCE, "../data/DataExamples/test_class_integer.csv")
+        preprocess.change_class_to_int(PATH_TRAIN_SOURCE, "../data/DataExamples/train_class_integer.csv")
+
         # ordenamos las columnas de train y test para que tengan el mismo orden
         preprocess.order_columns("../data/DataExamples/train_class_integer.csv", "../data/DataExamples/test_class_integer.csv",
                       "../data/DataExamples/test.csv")
@@ -194,11 +202,11 @@ def main():
                 train_x, test_x = preprocess.fSelectKbestNormalize1(numAtributes, atributeSelectionType, train_x, train_y,
                                                                            test_x)
             # obtenemos los mejores hyperparámetros y modelo
-            best_learning_rate, best_neurons_per_layer, best_model = get_best_hyperparametersKFold(train_x, train_y, 3)
+            best_learning_rate, best_neurons_per_layer, best_model = get_best_hyperparametersKFold(train_x, train_y, K)
             # guardamos el modelo
             save_model(best_model, PATH_MODELO_TARGET + '/mi_modelo_'+validatioMethod+'_'+atributeSelectionType+'.h5')
             # guardamos el train para tener su estructura en caso de querer predecir posteriormente con el modelo
-            df = pd.read_csv("../data/DataExamples/train.csv")
+            df = pd.read_csv("../data/DataExamples/train_class_integer.csv")
             df.to_csv(PATH_RESULTADOS + '/mi_train_' + validatioMethod + '_' + atributeSelectionType + '.csv', header=True, index=None)
         else:
             exit('Error: Método de validación incorrecto')
@@ -272,7 +280,10 @@ def main():
     file.write('\n' + '########################')
     file.write('\n' + 'Tipo de ejecución: ' + TRAIN_PREDICT)
     if TRAIN_PREDICT == 'train':
-        file.write('\n' + 'Tipo de validación: ' + VALIDATION_METHOD)
+        if VALIDATION_METHOD == 'KFold':
+            file.write('\n' + 'Tipo de validación: ' + VALIDATION_METHOD + ' K = ' + str(K))
+        else:
+            file.write('\n' + 'Tipo de validación: ' + VALIDATION_METHOD)
         best_neurons_per_layer = 'Número de neuronas: ' + str(best_neurons_per_layer)
         file.write('\n' + best_neurons_per_layer)
         best_learning_rate = 'Learning rate: %.5f' % best_learning_rate

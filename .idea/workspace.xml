@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/readme" beforeDir="false" afterPath="$PROJECT_DIR$/data/readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/englishCSVtf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/englishCSVtf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modulos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="280" column="39" selection-start-line="280" selection-start-column="39" selection-end-line="280" selection-end-column="39" />
+            <state relative-caret-position="1017">
+              <caret line="284" column="13" selection-start-line="284" selection-start-column="13" selection-end-line="284" selection-end-column="13" />
               <folding>
                 <element signature="e#1754#1792#0" expanded="true" />
               </folding>
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="281" selection-start-line="22" selection-start-column="281" selection-end-line="22" selection-end-column="281" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="23" selection-start-column="17" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="94" column="25" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="25" />
+            <state relative-caret-position="3434">
+              <caret line="202" column="40" selection-start-line="202" selection-start-column="40" selection-end-line="202" selection-end-column="40" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -86,6 +86,8 @@
       <find>Error:</find>
       <find>fSelectKbestNormalize</find>
       <find>error</find>
+      <find>ArgumentParser</find>
+      <find>packaging</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\frank\PycharmProjects\TFGEnglishMining</dir>
@@ -111,8 +113,8 @@
         <option value="$PROJECT_DIR$/data/Train/dev.csv" />
         <option value="$PROJECT_DIR$/src/examplesCode.py" />
         <option value="$PROJECT_DIR$/src/preprocessing.py" />
-        <option value="$PROJECT_DIR$/data/readme" />
         <option value="$PROJECT_DIR$/src/englishCSVtf.py" />
+        <option value="$PROJECT_DIR$/data/readme" />
       </list>
     </option>
   </component>
@@ -145,12 +147,19 @@
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Train_Aztertest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="trainingLogs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,16 +176,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src" />
-      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\modulos" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\NewData" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Temporales" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src" />
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\modulos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,7 +396,10 @@
       <workItem from="1588414625905" duration="1857000" />
       <workItem from="1588417822649" duration="13924000" />
       <workItem from="1588436273578" duration="277000" />
-      <workItem from="1588499980749" duration="9991000" />
+      <workItem from="1588499980749" duration="10017000" />
+      <workItem from="1588946767108" duration="2554000" />
+      <workItem from="1589181602564" duration="1810000" />
+      <workItem from="1589526736052" duration="11159000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -473,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588436358963</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Actualización para ejecutar el programa mediante script con englishCSVtf.py">
+      <created>1588524027397</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588524027397</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463003000" />
+    <option name="totallyTimeSpent" value="478552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -489,9 +508,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.1369936" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
       <window_info id="Favorites" order="2" sideWeight="0.5005192" side_tool="true" weight="0.18176973" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -504,7 +523,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.33125648" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3426791" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.46105918" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.5867082" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32917964" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49946696" weight="0.08411215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -622,14 +641,14 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state>
           <caret column="3" selection-end-column="3" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -679,39 +698,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Dev/dev.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="101" selection-start-column="93" selection-end-column="101" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="152" selection-start-column="144" selection-end-column="152" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="152" selection-start-column="144" selection-end-column="152" />
         </state>
       </provider>
     </entry>
@@ -764,38 +773,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/DataExamples/dev.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="919" selection-start-column="919" selection-end-column="919" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/DataExamples/test.csv" />
-    <entry file="file://$PROJECT_DIR$/data/DataExamples/train_class_integer.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/DataExamples/train.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/DataExamples/train_class_integer.csv" />
+    <entry file="file://$PROJECT_DIR$/data/DataExamples/train.csv" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -828,12 +808,12 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1887">
           <caret line="111" column="6" selection-start-line="111" selection-end-line="112" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -861,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/callbacks/tensorboard_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/python" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -879,9 +852,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modulos/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modulos/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -918,30 +889,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/callbacks/tensorboard_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Dev/dev.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="743">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="25" />
+        <state relative-caret-position="3434">
+          <caret line="202" column="40" selection-start-line="202" selection-start-column="40" selection-end-line="202" selection-end-column="40" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="281" selection-start-line="22" selection-start-column="281" selection-end-line="22" selection-end-column="281" />
+    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="919" selection-start-column="919" selection-end-column="919" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="280" column="39" selection-start-line="280" selection-start-column="39" selection-end-line="280" selection-end-column="39" />
+        <state relative-caret-position="1017">
+          <caret line="284" column="13" selection-start-line="284" selection-start-column="13" selection-end-line="284" selection-end-column="13" />
           <folding>
             <element signature="e#1754#1792#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="23" selection-start-column="17" selection-end-line="24" />
         </state>
       </provider>
     </entry>

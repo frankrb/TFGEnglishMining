@@ -15,8 +15,15 @@ Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [pat
 Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa False
 
 - Entrenar el modelo usando KFold sin selección de atributos:
-Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa False
-Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv HoldOut -sa False
+Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv KFold -sa False
+Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest\train_aztertest.csv -tedp C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest\test_aztertest.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa False
+
+##
+Ejemplo multi aztertest
+Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa False
+Nlpcube Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa False
+
+##
 
 - Entrenar el modelo usando HoldOut con selección de 50 atributos con Chi2
 Estructura: python englishCSVtf.py -trdp [path train] -tedp [path test] -of [path carpeta resultado] -ep train -mv HoldOut -sa True -tsa chi2 -na 50

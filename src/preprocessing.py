@@ -135,11 +135,11 @@ def change_class_to_int(csv_source_path,csv_target_path):
         i = i + 1
         #print(i)
         #print(lines[i][class_index])
-        if lines[i][class_index] == 'advanced':
+        if lines[i][class_index] == 'elementary':
             lines[i][class_index] = 0
         if lines[i][class_index] == 'intermediate':
             lines[i][class_index] = 1
-        if lines[i][class_index] == 'elementary':
+        if lines[i][class_index] == 'advanced':
             lines[i][class_index] = 2
 
 
@@ -197,3 +197,8 @@ def create_train_dev(pDevPercent, pTrainSourcePath, pTrainTargetPath, pDevTarget
 
     data_test.to_csv(pDevTargetPath, header=True, index=None)
     data_train.to_csv(pTrainTargetPath, header=True, index=None)
+
+def floadData(data_source_path, data_target_path):
+    # cargamos los datos en el path target
+    data = pd.read_csv(data_source_path)
+    data.to_csv(data_target_path, header=True, index=None)
