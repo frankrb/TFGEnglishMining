@@ -157,8 +157,8 @@ def main():
         preprocess.change_class_to_int(PATH_TRAIN_SOURCE, "../data/DataExamples/train_class_integer.csv")
         '''
         # si ya son integer cargamos los datos directamente
-        preprocess.change_class_to_int(PATH_TEST_SOURCE, "../data/DataExamples/test_class_integer.csv")
-        preprocess.change_class_to_int(PATH_TRAIN_SOURCE, "../data/DataExamples/train_class_integer.csv")
+        preprocess.floadData(PATH_TEST_SOURCE, "../data/DataExamples/test_class_integer.csv")
+        preprocess.floadData(PATH_TRAIN_SOURCE, "../data/DataExamples/train_class_integer.csv")
 
         # ordenamos las columnas de train y test para que tengan el mismo orden
         preprocess.order_columns("../data/DataExamples/train_class_integer.csv", "../data/DataExamples/test_class_integer.csv",
@@ -185,7 +185,7 @@ def main():
                 train_x, dev_x, test_x = preprocess.fSelectKbestNormalize(numAtributes, atributeSelectionType, train_x, train_y,
                                                                           dev_x, test_x)
             # obtenemos los mejores hyperparámetros y modelo
-            best_learning_rate, best_neurons_per_layer, best_model = get_best_hyperparametersHoldOut(train_x, train_y,
+            best_learning_rate, best_neurons_per_layer, best_model, best_accuracy = get_best_hyperparametersHoldOut(train_x, train_y,
                                                                                                      dev_x, dev_y)
             # guardamos el modelo
             save_model(best_model, PATH_RESULTADOS + '/mi_modelo_'+validatioMethod+'_'+atributeSelectionType+'.h5')
@@ -202,7 +202,7 @@ def main():
                 train_x, test_x = preprocess.fSelectKbestNormalize1(numAtributes, atributeSelectionType, train_x, train_y,
                                                                            test_x)
             # obtenemos los mejores hyperparámetros y modelo
-            best_learning_rate, best_neurons_per_layer, best_model = get_best_hyperparametersKFold(train_x, train_y, K)
+            best_learning_rate, best_neurons_per_layer, best_model, best_accuracy = get_best_hyperparametersKFold(train_x, train_y, K)
             # guardamos el modelo
             save_model(best_model, PATH_MODELO_TARGET + '/mi_modelo_'+validatioMethod+'_'+atributeSelectionType+'.h5')
             # guardamos el train para tener su estructura en caso de querer predecir posteriormente con el modelo
@@ -297,12 +297,14 @@ def main():
             '\n' + 'Path del train usado para el entrenamiento: ' + PATH_RESULTADOS + '\mi_train_' + validatioMethod + '_' + atributeSelectionType + '.csv')
         file.write(
             '\n' + 'Path del modelo final: ' + PATH_RESULTADOS + '\mi_modelo_' + validatioMethod + '_' + atributeSelectionType + '.h5')
-
+        text_dev_accuracy = 'Accuracy training: %.3f' % best_accuracy + "%"
+        file.write('\n' + text_dev_accuracy)
     elif TRAIN_PREDICT == 'predict':
         file.write(
             '\n' + 'Path del train usado para el entrenamiento: ' + PATH_TRAIN_SOURCE)
         file.write(
             '\n' + 'Path del modelo usado: ' + PATH_MODELO_SOURCE)
+
     text_accuracy = 'Accuracy test a ciegas: %.3f' % bind_test_accuracy + "%"
     file.write('\n' + text_accuracy)
     file.write('\n' + '########################')
@@ -425,7 +427,7 @@ def get_best_hyperparametersHoldOut(train_x, train_y, dev_x, dev_y):
 
     print('Final best Acc: {0}, Final best learning_rate {1}, Final best neurons per layer {2}'.format(best_accuracy, best_learn_rate, best_neurons_per_layer))
 
-    return best_learn_rate, best_neurons_per_layer, best_model
+    return best_learn_rate, best_neurons_per_layer, best_model, best_accuracy
 
 def get_best_hyperparametersKFold(train_x, train_y, k):
     # eliminamos los datos de la carpeta de logs de callbacks
@@ -491,7 +493,7 @@ def get_best_hyperparametersKFold(train_x, train_y, k):
 
     print('Final best Acc: {0}, Final best learning_rate {1}, Final best neurons per layer {2}'.format(best_accuracy, best_learn_rate, best_neurons_per_layer))
 
-    return best_learn_rate, best_neurons_per_layer, best_model
+    return best_learn_rate, best_neurons_per_layer, best_model, best_accuracy
 
 def save_model(model, targetPath):
     # guardamos el modelo
