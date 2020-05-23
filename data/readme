@@ -20,18 +20,18 @@ Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\PycharmProjects\TFGEnglishM
 
 ##
 Ejemplo multi aztertest todos los atributos
-Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa False
-Nlpcube Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa False
+Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 3 -sa False
+Nlpcube Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 3 -sa False
 ##
 ##
 Ejemplo multi aztertest 50 atributos mutual information
-Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa mutual_info_classif -na 50
-Nlpcube Ejemplo:  python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa mutual_info_classif -na 50
+Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 10 -sa True -tsa mutual_info_classif -na 50
+Nlpcube Ejemplo:  python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 10 -sa True -tsa mutual_info_classif -na 50
 ##
 ##
 Ejemplo multi aztertest 100 atributos mutual information
-Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa mutual_info_classif -na 100
-Nlpcube Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -of C:\Users\frank\Resultado -ep train -mv KFold -sa True -tsa mutual_info_classif -na 100
+Stanford Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_stanford.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_stanford.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 10 -sa True -tsa mutual_info_classif -na 100
+Nlpcube Ejemplo: python englishCSVtf.py -trdp C:\Users\frank\Resultado\Datos\train_cab_nlpcube.csv -tedp C:\Users\frank\Resultado\Datos\test_cab_nlpcube.csv -cc False -of C:\Users\frank\Resultado -ep train -mv KFold -k 10 -sa True -tsa mutual_info_classif -na 100
 ##
 
 - Entrenar el modelo usando HoldOut con selección de 50 atributos con Chi2

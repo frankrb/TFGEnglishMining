@@ -83,7 +83,6 @@ def fLoadTrainTestNormalizing(pTrainPath, pTestPath):
 
 def fLoadNormalizing(pSourcePath):
     # cargamos los datos normalizando
-    # load dataset
     dataframe = pd.read_csv(pSourcePath, header=None, skiprows=1)
     dataset = dataframe.values
     data_x = dataset[:, 0:148].astype(float)
@@ -127,14 +126,10 @@ def change_class_to_int(csv_source_path,csv_target_path):
     num_rows = len(lines)
     num_cols = len(lines[0])
     class_index = num_cols - 1
-    #print(num_rows)
-    #print(num_cols)
-    #print(class_index)
+
     i = 0
     while i < num_rows-1:
         i = i + 1
-        #print(i)
-        #print(lines[i][class_index])
         if lines[i][class_index] == 'elementary':
             lines[i][class_index] = 0
         if lines[i][class_index] == 'intermediate':

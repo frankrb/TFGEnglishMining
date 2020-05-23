@@ -87,6 +87,74 @@ def basicClassificationTF():
     print('Predicción del modelo: ', np.argmax(predictions[0]))
     print('Valor real: ',test_data_features[0])
 
+    #####################
+    # grid search
+    # learn_rate, neurons_per_layer = grid_search_hyperparameters(train_x, train_y)
+    # buscando los mejores parámetros para nuestro modelo
+    #####################
+
+    # model.fit(train_x, train_y, epochs=EPOCHS, callbacks=[tensorboard_callback, early_stopping_callback], validation_data=(dev_x, dev_y))
+    # Para poder observar el entrenamiento de los datos en TB: tensorboard --logdir=C:\Users\frank\PycharmProjects\TFGEnglishMining\src\logs\
+    """
+    # Test on unseen data
+    results = best_model.evaluate(test_x, test_y)
+    print('Final test set loss: {0}, Final test set accuracy: {1}, Learning rate: {2}, Neurons per layer: {3}'.format(results[0], results[1], best_learning_rate, best_neurons_per_layer))
+    print('Final test set accuracy: {:4f}'.format(results[1]))
+
+
+    predictions = best_model.predict_classes(test_x)
+    i = 0
+    total = 0
+
+    #test_y = dataframe_test.iloc[:, -1:].values
+
+    for pred in predictions:
+        # print("Predicción instancia, valor real: %.2f , %.2f" % (pred, test_y[i]))
+        print("Predicción instancia: {0}, valor real: {1}".format(CLASS_VALUE[int(pred)], CLASS_VALUE[int(test_y[i])]))
+        if pred == test_y[i]:
+            total = total + 1
+        i = i + 1
+
+    print("Accuracy test: ", (total / 111)*100, "%")
+    """
+
+def create_model(learn_rate=0.01, neurons=1):
+    model = keras.models.Sequential([
+        keras.layers.Dense(neurons, input_shape=(148,), activation='relu', name='fc1'),
+        keras.layers.Dense(neurons, activation='relu', name='fc2'),
+        keras.layers.Dense(3, activation=ACTIVATION, name='output'),
+    ])
+    # Compile model
+    optimizer = Adam(lr=learn_rate)
+    model.compile(loss=LOSS, optimizer=optimizer, metrics=['accuracy'])
+    return model
+
+def grid_search_hyperparameters(train_x, train_y):
+    model = KerasClassifier(build_fn=create_model, epochs=EPOCHS, verbose=0)
+    # define the grid search parameters
+    learn_rate = [0.0035, 0.0030, 0.0025, 0.0020, 0.0015, 0.001]
+    neurons = [5, 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+    param_grid = dict(learn_rate=learn_rate, neurons=neurons)
+    grid = GridSearchCV(estimator=model, param_grid=param_grid, n_jobs=-1, cv=3)
+    grid_result = grid.fit(train_x, train_y)
+
+    # summarize results
+    print("####### Resultados GridSearchCV ##########")
+    print("Mejor: %f usando %s" % (grid_result.best_score_, grid_result.best_params_))
+    means = grid_result.cv_results_['mean_test_score']
+    stds = grid_result.cv_results_['std_test_score']
+    params = grid_result.cv_results_['params']
+    for mean, stdev, param in zip(means, stds, params):
+        print("%f (%f) with: %r" % (mean, stdev, param))
+    print("####### Fin Resultados GridSearchCV ##########")
+    #####################
+
+    print(float(grid_result.best_params_['learn_rate']))
+
+    learn_rate = float(grid_result.best_params_['learn_rate'])
+    neurons_per_layer = int(grid_result.best_params_['neurons'])
+
+    return learn_rate, neurons_per_layer
 
 if __name__ == '__main__':
         basicClassificationTF()

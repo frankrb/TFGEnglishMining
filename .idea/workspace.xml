@@ -4,7 +4,9 @@
     <list default="true" id="139c71c3-fec4-442a-95c6-18919f7da108" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/readme" beforeDir="false" afterPath="$PROJECT_DIR$/data/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicClassificationTF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClassificationTF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/englishCSVtf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/englishCSVtf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="926">
-              <caret line="429" column="77" selection-start-line="429" selection-start-column="64" selection-end-line="429" selection-end-column="77" />
+            <state relative-caret-position="326">
+              <caret line="443" lean-forward="true" selection-start-line="443" selection-end-line="443" />
               <folding>
                 <element signature="e#1754#1792#0" expanded="true" />
               </folding>
@@ -32,8 +34,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="249" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="249" />
+            <state relative-caret-position="289">
+              <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCSVtf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="9" selection-start-line="13" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/examplesCode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="e#39#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3298">
-              <caret line="200" column="13" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="13" />
+            <state relative-caret-position="207">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -104,13 +127,13 @@
         <option value="$PROJECT_DIR$/data/Temporales/train_clean.csv" />
         <option value="$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/basicClassificationTF.py" />
         <option value="$PROJECT_DIR$/src/kerasClassification.py" />
         <option value="$PROJECT_DIR$/englishCSVtf.py" />
         <option value="$PROJECT_DIR$/src/irisCSVtf.py" />
         <option value="$PROJECT_DIR$/src/logisticRegresion.py" />
         <option value="$PROJECT_DIR$/data/Train/dev.csv" />
         <option value="$PROJECT_DIR$/src/examplesCode.py" />
+        <option value="$PROJECT_DIR$/src/basicClassificationTF.py" />
         <option value="$PROJECT_DIR$/src/preprocessing.py" />
         <option value="$PROJECT_DIR$/data/readme" />
         <option value="$PROJECT_DIR$/src/englishCSVtf.py" />
@@ -118,10 +141,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1439" />
-    <option name="y" value="352" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="979" />
+    <option name="y" value="435" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -141,36 +164,6 @@
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="DataExamples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Modelos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Train" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Train_Aztertest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
@@ -418,7 +411,12 @@
       <workItem from="1589181602564" duration="1810000" />
       <workItem from="1589526736052" duration="12250000" />
       <workItem from="1589727333859" duration="9894000" />
-      <workItem from="1589802104844" duration="759000" />
+      <workItem from="1589802104844" duration="2779000" />
+      <workItem from="1589811242503" duration="1595000" />
+      <workItem from="1589882216180" duration="15123000" />
+      <workItem from="1589966602304" duration="668000" />
+      <workItem from="1590160416286" duration="204000" />
+      <workItem from="1590238065877" duration="7515000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -518,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1589551095944</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Actualización de ejecutar el programa con datos de clases numéricas.Corrección resultados.">
+      <created>1589803170640</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589803170640</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="490296000" />
+    <option name="totallyTimeSpent" value="517421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,12 +539,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
-      <window_info id="Favorites" order="2" sideWeight="0.5005192" side_tool="true" weight="0.18176973" />
+      <window_info id="Favorites" order="2" sideWeight="0.5022625" side_tool="true" weight="0.1433902" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.41121495" />
@@ -550,7 +554,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.33125648" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3426791" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.31152648" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.31152648" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32917964" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49946696" weight="0.08411215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -614,24 +618,14 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Actualización para ejecutar el programa mediante script con englishCSVtf.py" />
     <MESSAGE value="Actualización de ejecutar el programa con datos de clases numéricas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualización de ejecutar el programa con datos de clases numéricas." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/preprocessing.py</url>
-          <line>172</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Actualización de ejecutar el programa con datos de clases numéricas.Corrección resultados." />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización de ejecutar el programa con datos de clases numéricas.Corrección resultados." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TFGEnglishMining$kerasClassification.coverage" NAME="kerasClassification Coverage Results" MODIFIED="1569767652313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$main.coverage" NAME="main Coverage Results" MODIFIED="1569063875284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1586277169319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf__1_.coverage" NAME="englishCSVtf (1) Coverage Results" MODIFIED="1587924027386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf__1_.coverage" NAME="englishCSVtf (1) Coverage Results" MODIFIED="1589885704906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$basicClassificationTF.coverage" NAME="basicClassificationTF Coverage Results" MODIFIED="1569753263330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$irisCSVtf.coverage" NAME="irisCSVtf Coverage Results" MODIFIED="1570879267533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$logisticRegresion.coverage" NAME="logisticRegresion Coverage Results" MODIFIED="1570895373729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -673,14 +667,14 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-end-column="3" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -734,25 +728,25 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="101" selection-start-column="93" selection-end-column="101" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="152" selection-start-column="144" selection-end-column="152" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
         </state>
       </provider>
     </entry>
@@ -777,13 +771,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocess.py" />
-    <entry file="file://$PROJECT_DIR$/src/examplesCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logisticRegresion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2338">
@@ -839,27 +826,17 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1887">
           <caret line="111" column="6" selection-start-line="111" selection-end-line="112" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="1171" selection-start-line="1171" selection-end-line="1171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/basicClassificationTF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,13 +852,6 @@
     <entry file="file://$PROJECT_DIR$/src/python" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/irisCSVtf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modulos/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/io/parsers.py">
@@ -934,14 +904,14 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-6394">
           <caret line="34" column="756" lean-forward="true" selection-start-line="34" selection-start-column="756" selection-end-line="34" selection-end-column="756" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
         </state>
       </provider>
     </entry>
@@ -964,27 +934,54 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/basicClassificationTF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3298">
-          <caret line="200" column="13" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="13" />
+        <state relative-caret-position="207">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCSVtf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examplesCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#39#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="249" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="249" />
+        <state relative-caret-position="289">
+          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
-          <caret line="429" column="77" selection-start-line="429" selection-start-column="64" selection-end-line="429" selection-end-column="77" />
+        <state relative-caret-position="326">
+          <caret line="443" lean-forward="true" selection-start-line="443" selection-end-line="443" />
           <folding>
             <element signature="e#1754#1792#0" expanded="true" />
           </folding>
