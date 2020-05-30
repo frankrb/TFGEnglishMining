@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="139c71c3-fec4-442a-95c6-18919f7da108" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/readme" beforeDir="false" afterPath="$PROJECT_DIR$/data/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/englishCSVtf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/englishCSVtf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="203" column="12" lean-forward="true" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="12" />
+            <state relative-caret-position="-476">
+              <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
               <folding>
                 <element signature="e#1754#1792#0" expanded="true" />
               </folding>
@@ -31,17 +31,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="391">
+              <caret line="23" column="230" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1208">
-              <caret line="126" column="12" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="12" />
+            <state relative-caret-position="2040">
+              <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -111,14 +111,14 @@
         <option value="$PROJECT_DIR$/src/examplesCode.py" />
         <option value="$PROJECT_DIR$/src/basicClassificationTF.py" />
         <option value="$PROJECT_DIR$/src/preprocessing.py" />
-        <option value="$PROJECT_DIR$/src/englishCSVtf.py" />
         <option value="$PROJECT_DIR$/data/readme" />
+        <option value="$PROJECT_DIR$/src/englishCSVtf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="979" />
-    <option name="y" value="435" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -145,6 +145,27 @@
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Originales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Originales" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Originales" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="advintele" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -162,16 +183,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Originales" />
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src" />
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\modulos" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\NewData" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Temporales" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src" />
-      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\modulos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -393,7 +415,13 @@
       <workItem from="1589966602304" duration="668000" />
       <workItem from="1590160416286" duration="204000" />
       <workItem from="1590238065877" duration="7515000" />
-      <workItem from="1590249140218" duration="457000" />
+      <workItem from="1590249140218" duration="766000" />
+      <workItem from="1590250102836" duration="813000" />
+      <workItem from="1590275365370" duration="783000" />
+      <workItem from="1590322306894" duration="2339000" />
+      <workItem from="1590573048671" duration="1369000" />
+      <workItem from="1590761004030" duration="1446000" />
+      <workItem from="1590838843071" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -507,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590249193110</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Actualización de nuevos parámetros.">
+      <created>1590249809539</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590249809539</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="517878000" />
+    <option name="totallyTimeSpent" value="525698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,10 +558,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.14978679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.15938166" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
       <window_info id="Favorites" order="2" sideWeight="0.5022625" side_tool="true" weight="0.1433902" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -536,10 +570,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" visible="true" weight="0.33125648" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.33125648" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3426791" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" weight="0.31152648" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.31152648" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32917964" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49946696" weight="0.08411215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -655,13 +689,13 @@
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider editor-type-id="text-editor">
         <state>
           <caret column="3" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training.py">
@@ -716,10 +750,10 @@
           <caret column="101" selection-start-column="93" selection-end-column="101" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
@@ -727,13 +761,13 @@
           <caret column="152" selection-start-column="144" selection-end-column="152" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Test/test.csv">
@@ -814,10 +848,10 @@
           <caret line="111" column="6" selection-start-line="111" selection-end-line="112" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -892,13 +926,13 @@
           <caret line="34" column="756" lean-forward="true" selection-start-line="34" selection-start-column="756" selection-end-line="34" selection-end-column="756" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/preprocessing/__init__.py">
@@ -947,27 +981,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="203" column="12" lean-forward="true" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="12" />
+        <state relative-caret-position="-476">
+          <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
           <folding>
             <element signature="e#1754#1792#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="230" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1208">
-          <caret line="126" column="12" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="12" />
+        <state relative-caret-position="2040">
+          <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -201,6 +201,8 @@ def main():
             # obtenemos los mejores hyperparámetros y modelo
             best_learning_rate, best_neurons_per_layer, best_model, best_accuracy = get_best_hyperparametersHoldOut(train_x, train_y,
                                                                                                      dev_x, dev_y)
+            lineas = list(train_x)
+            numAtributes = len(lineas[0])
             # guardamos el modelo
             save_model(best_model, PATH_RESULTADOS + '/mi_modelo_'+validatioMethod+'_'+atributeSelectionType+str(numAtributes)+'.h5')
             # guardamos el train para tener su estructura en caso de querer predecir posteriormente con el modelo
@@ -217,6 +219,8 @@ def main():
                                                                            test_x)
             # obtenemos los mejores hyperparámetros y modelo
             best_learning_rate, best_neurons_per_layer, best_model, best_accuracy = get_best_hyperparametersKFold(train_x, train_y, K)
+            lineas = list(train_x)
+            numAtributes = len(lineas[0])
             # guardamos el modelo
             save_model(best_model, PATH_MODELO_TARGET + '/mi_modelo_'+validatioMethod+'_'+atributeSelectionType+str(numAtributes)+'.h5')
             # guardamos el train para tener su estructura en caso de querer predecir posteriormente con el modelo
