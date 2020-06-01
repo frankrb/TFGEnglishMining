@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="139c71c3-fec4-442a-95c6-18919f7da108" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/englishCSVtf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/englishCSVtf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
+            <state relative-caret-position="-477">
+              <caret line="325" column="70" selection-start-line="325" selection-start-column="57" selection-end-line="325" selection-end-column="70" />
               <folding>
                 <element signature="e#1754#1792#0" expanded="true" />
               </folding>
@@ -28,18 +29,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/DataExamples/test.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="230" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
+            <state relative-caret-position="-238">
+              <caret line="22" column="233" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="233" />
             </state>
           </provider>
         </entry>
@@ -47,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="28" />
+            <state relative-caret-position="132">
+              <caret line="108" column="39" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -124,8 +117,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="958" />
+    <option name="y" value="356" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -153,13 +146,34 @@
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="DataExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="Modelos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="NewData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="Originales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Originales" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TFGEnglishMining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Originales" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="Datos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TFGEnglishMining" type="b2602c69:ProjectViewProjectNode" />
@@ -187,11 +201,11 @@
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\src\modulos" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Originales\en" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\NewData" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Temporales" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Test_Aztertest" />
       <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data\Train_Aztertest" />
-      <recent name="C:\Users\frank\PycharmProjects\TFGEnglishMining\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,7 +433,8 @@
       <workItem from="1590322306894" duration="2339000" />
       <workItem from="1590573048671" duration="1369000" />
       <workItem from="1590761004030" duration="1446000" />
-      <workItem from="1590838843071" duration="1543000" />
+      <workItem from="1590838843071" duration="25479000" />
+      <workItem from="1590925852602" duration="8833000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -554,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590840763389</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Añadir nuevos ficheros CSV obtenidos de Aztertest.">
+      <created>1590844340903</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590844340903</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526480000" />
+    <option name="totallyTimeSpent" value="559249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,10 +592,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.15938166" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
       <window_info id="Favorites" order="2" sideWeight="0.5022625" side_tool="true" weight="0.1433902" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -586,7 +607,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.33125648" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3426791" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.31152648" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.46002078" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32917964" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49946696" weight="0.08411215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -653,7 +674,8 @@
     <MESSAGE value="Actualización de ejecutar el programa con datos de clases numéricas.Corrección resultados." />
     <MESSAGE value="Actualización de nuevos parámetros." />
     <MESSAGE value="Añadir nuevos ficheros de textos originales." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadir nuevos ficheros de textos originales." />
+    <MESSAGE value="Añadir nuevos ficheros CSV obtenidos de Aztertest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadir nuevos ficheros CSV obtenidos de Aztertest." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TFGEnglishMining$kerasClassification.coverage" NAME="kerasClassification Coverage Results" MODIFIED="1569767652313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -666,23 +688,6 @@
     <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf.coverage" NAME="englishCSVtf Coverage Results" MODIFIED="1582203482473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/NewData/iris_test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/layers/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="872" column="31" lean-forward="true" selection-start-line="872" selection-start-column="31" selection-end-line="872" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_encoders.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -698,6 +703,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/NewData/iris_training.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
@@ -707,9 +715,6 @@
         <state>
           <caret column="3" selection-end-column="3" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training.py">
@@ -734,42 +739,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/wrappers/scikit_learn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/trainingLogs/dasdad" />
     <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean_modificado.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Train/train.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="545" selection-start-line="1" selection-start-column="539" selection-end-line="1" selection-end-column="545" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Temporales/train_clean.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="101" selection-start-column="93" selection-end-column="101" />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Test_Aztertest/test_aztertest.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="152" selection-start-column="144" selection-end-column="152" />
@@ -780,28 +781,25 @@
           <caret line="58" column="946" selection-start-line="58" selection-start-column="936" selection-end-line="58" selection-end-column="946" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Test/test.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Test/test.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Temporales/test_clean_v1.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Temporales/test_clean_v1.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1802">
           <caret line="106" column="832" lean-forward="true" selection-start-line="106" selection-start-column="832" selection-end-line="106" selection-end-column="832" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocess.py" />
@@ -856,15 +854,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Temporales/test_clean.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1887">
           <caret line="111" column="6" selection-start-line="111" selection-end-line="112" />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -924,16 +922,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Dev/dev.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="743">
           <caret line="90" column="30" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Train_Aztertest/train_aztertest.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-6394">
           <caret line="34" column="756" lean-forward="true" selection-start-line="34" selection-start-column="756" selection-end-line="34" selection-end-column="756" />
@@ -944,9 +945,6 @@
           <caret line="2" column="998" selection-start-line="2" selection-start-column="990" selection-end-line="2" selection-end-column="998" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/preprocessing/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -956,16 +954,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/DataExamples/test_class_integer.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/DataExamples/train_class_integer.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basicClassificationTF.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -994,10 +992,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/wrappers/scikit_learn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow_core/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="576" column="22" lean-forward="true" selection-start-line="576" selection-start-column="22" selection-end-line="576" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/DataExamples/test.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Originales/en/Datos/test_cab_nlpcube.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="108" column="39" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
+        <state relative-caret-position="-477">
+          <caret line="325" column="70" selection-start-line="325" selection-start-column="57" selection-end-line="325" selection-end-column="70" />
           <folding>
             <element signature="e#1754#1792#0" expanded="true" />
           </folding>
@@ -1006,25 +1040,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="230" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
+        <state relative-caret-position="-238">
+          <caret line="22" column="233" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="233" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/DataExamples/test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
   </component>

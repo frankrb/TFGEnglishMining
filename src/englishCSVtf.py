@@ -323,7 +323,7 @@ def main():
             '\n' + 'Path del train usado para el entrenamiento: ' + PATH_RESULTADOS + '\mi_train_' + validatioMethod + '_' + atributeSelectionType + '.csv')
         file.write(
             '\n' + 'Path del modelo final: ' + PATH_RESULTADOS + '\mi_modelo_' + validatioMethod + '_' + atributeSelectionType + '.h5')
-        text_dev_accuracy = 'Accuracy training: %.3f' % best_accuracy + "%"
+        text_dev_accuracy = 'Accuracy training: %.3f' % (best_accuracy*100) + "%"
         file.write('\n' + text_dev_accuracy)
     elif TRAIN_PREDICT == 'predict':
         file.write(
@@ -416,21 +416,36 @@ def get_best_hyperparametersKFold(train_x, train_y, k):
                 # añadiremos una capa dropout para evitar overfitting
 
                 model = tf.keras.models.Sequential([
+                    #tf.keras.layers.Dense(nrs, input_shape=(columns,), activation='tanh', name='input',
+                    #                      activity_regularizer=l1(0.001)),
+                    tf.keras.layers.Dense(nrs, input_shape=(columns,), activation='tanh', name='input'),
+                    #tf.keras.layers.Dropout(0.2, name='do1'),
+                    tf.keras.layers.Dense(nrs, activation='tanh', name='fc1'),
+                    #tf.keras.layers.Dropout(0.2, name='do2'),
+                    tf.keras.layers.Dense(3, activation='softmax', name='output'),
+                ])
+
+                '''model = tf.keras.models.Sequential([
                     tf.keras.layers.Dense(nrs, input_shape=(columns,), activation='relu', name='input',
                                           activity_regularizer=l1(0.001)),
                     tf.keras.layers.Dropout(0.2, name='do1'),
                     tf.keras.layers.Dense(nrs, activation='relu', name='fc1'),
                     tf.keras.layers.Dropout(0.2, name='do2'),
                     tf.keras.layers.Dense(3, activation='softmax', name='output'),
-                ])
+                ])'''
 
-                # optimizer = tf.keras.optimizers.Adam(lr=lr)
                 optimizer = tf.keras.optimizers.Adam(lr=lr, beta_1=0.9, beta_2=0.9999, epsilon=1e-08)
+                #optimizer = tf.keras.optimizers.Adadelta(lr=lr, rho=0.95, epsilon=1e-07)
+                #optimizer = tf.keras.optimizers.Adagrad(lr=lr, initial_accumulator_value=0.1, epsilon=1e-07)
+                #optimizer = tf.keras.optimizers.Adamax(lr=lr, beta_1=0.9, beta_2=0.9999, epsilon=1e-08)
+                #optimizer = tf.keras.optimizers.SGD(lr=lr, momentum=0.0, nesterov=False)
                 model.compile(loss=LOSS, optimizer=optimizer, metrics=['accuracy'])
                 #model.fit(train_x[train], train_y[train], epochs=EPOCHS, verbose=0, callbacks=[training_tensorboard_callback, early_stopping_callback], validation_data=(train_x[dev], train_y[dev]))
-                model.fit(train_x[train], train_y[train], epochs=EPOCHS, verbose=0,
+                model.fit(train_x[train], train_y[train],
+                          epochs=EPOCHS, verbose=0,
                           callbacks=[early_stopping_callback],
                           validation_data=(train_x[dev], train_y[dev]))
+                          #batch_size=256)
                 # Para poder observar el entrenamiento de los datos en TB: tensorboard --logdir=C:\Users\frank\PycharmProjects\TFGEnglishMining\src\trainingLogs\
                 # Evaluamos el modelo obtenido
                 scores = model.evaluate(train_x[dev], train_y[dev], verbose=0)
