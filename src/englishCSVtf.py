@@ -61,13 +61,14 @@ TEST = "../data/Test/test.csv"
 BATCH_SIZE = 32 # en el caso de modelos secuenciales es mejor no incluir el batch size
 CLASS_VALUE = ['Elementary', 'Intermediate', 'Advanced'] # advanced = 2, intermediate = 1, elementary = 0
 EPOCHS = 100 # número de entrenamiento del modelo
-NEURONS_PER_LAYER = [4, 16, 32, 64] # número de nodos por capa(4-16-64-512)
+#NEURONS_PER_LAYER = [4, 16, 32, 64] # número de nodos por capa(4-16-64-512)
 VERBOSITY = 0 # es un parámetro que nos sirve para la forma en que se muestran las epochs
 LOSS = 'sparse_categorical_crossentropy' # esto es debido a que las clases están dadas al modelo como un array de dimensión 1 ej.:[1, 2, 0, 0, 1,...]
 ACTIVATION = 'softmax' #''softmax' # debido a que es una clasificación multiclass (sigmoid en caso de binarias)
 DEV_SIZE = 0.01 # porcentaje del dev
-LEARN_RATES = [0.01, 0.001, 0.00125, 0.0015, 0.002, 0.0025, 0.003, 0.0035]
-
+#LEARN_RATES = [0.01, 0.001, 0.00125, 0.0015, 0.002, 0.0025, 0.003, 0.0035]
+LEARN_RATES = [0.003]
+NEURONS_PER_LAYER = [16]
 '''TRAIN_PREDICT = 'predict' # seleccionamos si deseamos entrenar el modelo o simplemente hacer predicciones con uno existente: train o predict
 ATRIBUTE_SELECTION_TYPE = '' #seleccionamos los X mejores atributos según chi2, f_classif, mutual_info_classif
 ATRIBUTE_SELECTION_NO_ATR = 50
@@ -432,9 +433,9 @@ def get_best_hyperparametersKFold(train_x, train_y, k):
                     #tf.keras.layers.Dense(nrs, input_shape=(columns,), activation='tanh', name='input',
                     #                      activity_regularizer=l1(0.001)),
                     tf.keras.layers.Dense(nrs, input_shape=(columns,), activation='tanh', name='input'),
-                    #tf.keras.layers.Dropout(0.2, name='do1'),
+                    # tf.keras.layers.Dropout(0.2, name='do1'),
                     tf.keras.layers.Dense(nrs, activation='tanh', name='fc1'),
-                    #tf.keras.layers.Dropout(0.2, name='do2'),
+                    # tf.keras.layers.Dropout(0.2, name='do2'),
                     tf.keras.layers.Dense(3, activation='softmax', name='output'),
                 ])
 

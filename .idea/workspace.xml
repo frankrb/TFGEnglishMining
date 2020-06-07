@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="357" column="55" lean-forward="true" selection-start-line="357" selection-start-column="55" selection-end-line="357" selection-end-column="55" />
+            <state relative-caret-position="174">
+              <caret line="450" column="16" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="16" />
               <folding>
                 <element signature="e#1754#1792#0" expanded="true" />
               </folding>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="22" column="233" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="233" />
+            <state relative-caret-position="391">
+              <caret line="23" column="222" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
             </state>
           </provider>
         </entry>
@@ -435,7 +435,8 @@
       <workItem from="1590761004030" duration="1446000" />
       <workItem from="1590838843071" duration="25479000" />
       <workItem from="1590925852602" duration="8833000" />
-      <workItem from="1591013246709" duration="156000" />
+      <workItem from="1591013246709" duration="964000" />
+      <workItem from="1591545176242" duration="6685000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicio">
       <created>1563378454483</created>
@@ -584,11 +585,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591013292975</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Nuevos cambios en el modelo Sequential.">
+      <created>1591013419408</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1591013419408</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="559405000" />
+    <option name="totallyTimeSpent" value="566898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,9 +609,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.16257995" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.1641791" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.18176973" />
       <window_info id="Favorites" order="2" sideWeight="0.5022625" side_tool="true" weight="0.1433902" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -685,13 +692,14 @@
     <MESSAGE value="Añadir nuevos ficheros de textos originales." />
     <MESSAGE value="Añadir nuevos ficheros CSV obtenidos de Aztertest." />
     <MESSAGE value="Nuevos cambios en el modelo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuevos cambios en el modelo." />
+    <MESSAGE value="Nuevos cambios en el modelo Sequential." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos cambios en el modelo Sequential." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TFGEnglishMining$kerasClassification.coverage" NAME="kerasClassification Coverage Results" MODIFIED="1569767652313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$main.coverage" NAME="main Coverage Results" MODIFIED="1569063875284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1586277169319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf__1_.coverage" NAME="englishCSVtf (1) Coverage Results" MODIFIED="1589885704906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/TFGEnglishMining$englishCSVtf__1_.coverage" NAME="englishCSVtf (1) Coverage Results" MODIFIED="1591545321091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$basicClassificationTF.coverage" NAME="basicClassificationTF Coverage Results" MODIFIED="1569753263330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$irisCSVtf.coverage" NAME="irisCSVtf Coverage Results" MODIFIED="1570879267533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/TFGEnglishMining$logisticRegresion.coverage" NAME="logisticRegresion Coverage Results" MODIFIED="1570895373729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
@@ -1040,15 +1048,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="233" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="233" />
+        <state relative-caret-position="391">
+          <caret line="23" column="222" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="230" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/englishCSVtf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="357" column="55" lean-forward="true" selection-start-line="357" selection-start-column="55" selection-end-line="357" selection-end-column="55" />
+        <state relative-caret-position="174">
+          <caret line="450" column="16" selection-start-line="450" selection-start-column="16" selection-end-line="450" selection-end-column="16" />
           <folding>
             <element signature="e#1754#1792#0" expanded="true" />
           </folding>
